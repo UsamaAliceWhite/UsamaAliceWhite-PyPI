@@ -1,0 +1,64 @@
+# Copyright 2026 UsamaAliceWhite All Rights Reserved
+
+
+[build-system]
+# ビルドツール
+build-backend = "setuptools.build_meta"
+# ビルドツールのバージョン
+requires = ["setuptools>=61.0"]
+
+
+[project]
+# 開発者情報
+authors = [{name= "UsamaAliceWhite"}]
+# ライブラリ名
+name = "UsamaAliceWhite"
+# バージョン
+version = "4.0.0"
+# ライセンス
+license = {file= "LICENSE"}
+# 説明文
+description = "A versatile utility library designed to streamline common development tasks."
+# 仕様書
+readme = "README.md"
+# 必須Pythonバージョン
+requires-python = ">=3.13"
+# 依存ライブラリ
+dependencies = [
+    "psutil>=7.2.2"
+]
+# 分類子
+classifiers = [
+    # 開発ステータス
+    "Development Status :: 5 - Production/Stable",
+    # 対象ユーザ
+    "Intended Audience :: Developers",
+    # ライセンス
+    "License :: OSI Approved :: MIT License",
+    # OS
+    "Operating System :: OS Independent",
+    # 開発言語
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    # トピック
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+
+[project.urls]
+# 外部サイト
+"GitHub" = "https://github.com/UsamaAliceWhite/UsamaAliceWhite-PyPI"
+
+
+[tool.setuptools.packages.find]
+# ビルド時の初回検索位置
+where = ["."]
+# ビルドの対象パッケージ
+include = ["UsamaAliceWhite*"]
+
+
+[tool.setuptools.package-data]
+# pythonファイル以外に含める拡張子
+"*" = ["*.*"]
