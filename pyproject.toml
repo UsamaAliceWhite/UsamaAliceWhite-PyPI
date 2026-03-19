@@ -1,0 +1,66 @@
+# Copyright 2026 UsamaAliceWhite All Rights Reserved
+
+
+[build-system]
+# ビルドツール
+build-backend = "setuptools.build_meta"
+# ビルドツールのバージョン
+requires = ["setuptools>=61.0"]
+
+
+[tool.setuptools.packages.find]
+# ビルド時の初回検索位置
+where = ["."]
+# ビルド時の対象パッケージ
+include = ["UsamaAliceWhite*"]
+
+
+[tool.setuptools.package-data]
+# ビルド時にPython以外に含めるファイル
+"*" = ["*.*"]
+
+
+[project]
+# PyPIのライブラリ名
+name = "UsamaAliceWhite"
+# ライブラリのバージョン
+version = "5.0.1"
+# 開発者情報
+authors = [{name= "UsamaAliceWhite"}]
+# READMEのファイルパス
+readme = "README.md"
+# LICENSEのファイルパス
+license = {file= "LICENSE"}
+# Pythonのバージョン
+requires-python = ">=3.13"
+# 説明文
+description = "A versatile utility library designed to streamline common development tasks."
+
+classifiers = [
+    # 開発ステータス
+    "Development Status :: 5 - Production/Stable",
+    # 対象ユーザ
+    "Intended Audience :: Developers",
+    # 対応OS
+    "Operating System :: OS Independent",
+    # ライセンス
+    "License :: OSI Approved :: MIT License",
+    # 対応言語
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    # 分類
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities"
+]
+# サードパーティーライブラリ
+dependencies = [
+    "psutil>=7.2.2",
+    "screeninfo>=0.8.1"
+]
+
+
+[project.urls]
+# GitHubのURL
+"GitHub" = "https://github.com/UsamaAliceWhite/UsamaAliceWhite-PyPI"
