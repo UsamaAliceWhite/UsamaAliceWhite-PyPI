@@ -45,7 +45,7 @@ def launch_browser_with_remote_debug(
         profile_path= Path to the profile directory
         debug_port= Remote debugging port number
         cmdline_args= Additional command-line arguments
-            (--user-data-dir and --remote-debugging-port are added automatically)
+        (--user-data-dir and --remote-debugging-port are added automatically)
     Returns:
         subprocess.Popen= The launched browser process instance
     """
