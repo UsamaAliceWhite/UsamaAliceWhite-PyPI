@@ -4,6 +4,7 @@
 # Local Module
 from . import (
     Core,
+    Log,
     System
 )
 
@@ -11,5 +12,6 @@ from . import (
 # Public API
 __all__ = [
     "Core",
+    "Log",
     "System"
 ]
